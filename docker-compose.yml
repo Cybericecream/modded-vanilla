@@ -1,0 +1,30 @@
+version: '3'
+services:
+  minecraft:
+    container_name: mc_server
+    image: itzg/minecraft-server
+    restart: 'unless-stopped'
+    ports: 
+      - '25565:25565'
+      - '24454:24454'
+      - '8123:8123'
+    environment: 
+      EULA: 'TRUE'
+      DIFFICULTY: 'normal'
+      MOTD: 'Test Docker Server'
+
+      # Forge Settings
+      TYPE: FORGE
+      VERSION: '1.16.4'
+      FORGEVERSION: '35.1.4'
+
+      # Admins
+      OPS: 'cybericecream'
+      
+      # Player Settings
+      MAX_PLAYERS: 20
+
+      # Server Config
+      MEMORY: '4G'
+    volumes:
+      - ./data:/data
