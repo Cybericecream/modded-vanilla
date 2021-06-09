@@ -11,12 +11,14 @@ services:
     environment: 
       EULA: 'TRUE'
       DIFFICULTY: 'normal'
-      MOTD: 'Test Docker Server'
+      MOTD: 'Welcome to 1.17'
 
-      # Forge Settings
-      TYPE: FORGE
-      VERSION: '1.16.4'
-      FORGEVERSION: '35.1.4'
+      # Version Settings
+      VERSION: '1.17'
+
+      # Settings
+      SNOOPER_ENABLED: false
+      SPAWN_PROTECTION: false
 
       # Admins
       OPS: 'cybericecream'
