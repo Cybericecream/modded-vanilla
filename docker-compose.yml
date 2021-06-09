@@ -17,8 +17,8 @@ services:
       VERSION: '1.17'
 
       # Settings
-      SNOOPER_ENABLED: false
-      SPAWN_PROTECTION: false
+      SNOOPER_ENABLED: 0
+      SPAWN_PROTECTION: 0
 
       # Admins
       OPS: 'cybericecream'
